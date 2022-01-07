@@ -1,3 +1,160 @@
+.Footer {
+  font-family: "Merriweather Sans", sans-serif;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.Footer h1 {
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+}
+.Footer .container {
+  margin-top: 30px;
+  display: grid;
+  width: 70rem;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: start;
+}
+.Footer .container .links {
+  display: flex;
+  justify-content: center;
+}
+.Footer .container .links ul {
+  display: flex;
+  flex-direction: column;
+}
+.Footer .container .links ul li {
+  list-style: none;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 21px;
+  padding: 0.5rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+.Footer .container .send-mail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.Footer .container .send-mail p {
+  color: #5E5E5E;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  padding-bottom: 4rem;
+}
+.Footer .container .send-mail label {
+  position: relative;
+}
+.Footer .container .send-mail label input {
+  border: none;
+  border-bottom: 1px solid rgba(150, 75, 0, 0.7);
+  width: 400px;
+  height: 40px;
+}
+.Footer .container .send-mail label button {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: none;
+  border: none;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 25px;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  color: #964B00;
+  letter-spacing: 1.1px;
+}
+.Footer .container .socials {
+  display: flex;
+  justify-content: center;
+}
+.Footer .container .socials ul {
+  display: flex;
+  flex-direction: column;
+}
+.Footer .container .socials ul li {
+  list-style: none;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 21px;
+  padding: 0.5rem;
+  text-align: center;
+  text-transform: uppercase;
+}
 
+@media (max-width: 1132px) {
+  .Footer h1 {
+    font-size: 30px;
+  }
+  .Footer .container {
+    display: grid;
+    width: 48rem;
+  }
+  .Footer .container .links ul li {
+    font-size: 16px;
+    line-height: 15px;
+    padding: 0.4rem;
+  }
+  .Footer .container .socials ul li {
+    font-size: 16px;
+    line-height: 15px;
+    padding: 0.4rem;
+  }
+  .Footer .container .send-mail p {
+    font-size: 17px;
+    line-height: 20px;
+    padding-bottom: 3rem;
+  }
+  .Footer .container .send-mail label {
+    position: relative;
+  }
+  .Footer .container .send-mail label input {
+    border: none;
+    border-bottom: 1px solid rgba(150, 75, 0, 0.7);
+    width: 300px;
+    height: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .Footer {
+    height: 60vh;
+  }
+  .Footer h1 {
+    font-size: 23px;
+  }
+  .Footer .container {
+    display: grid;
+    width: 18rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .Footer .container .socials {
+    margin-top: 25px;
+  }
+  .Footer .container .send-mail {
+    margin-top: 25px;
+    order: 3;
+  }
+  .Footer .container .send-mail p {
+    padding-bottom: 1rem;
+  }
+  .Footer .container .send-mail label input {
+    border: none;
+    border-bottom: 1px solid rgba(150, 75, 0, 0.7);
+    width: 300px;
+    height: 40px;
+  }
+  .Footer .container .send-mail label button {
+    font-size: 16px;
+  }
+}
 
 /*# sourceMappingURL=footer.css.map */

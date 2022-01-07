@@ -1,0 +1,166 @@
+.Offer {
+  font-family: 'Inconsolata', monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 4rem 0 4rem 0;
+
+  h1 {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 42px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+
+    &:after {
+      display: block;
+      width: 515px;
+      content: '';
+      border-bottom: 1px solid rgba(150, 75, 0, 0.7);
+      margin-top: 20px;
+    }
+  }
+
+
+  .offer-text {
+    padding-top: 40px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 21px;
+    text-align: center;
+    width: 45%;
+    margin: 0 auto;
+  }
+
+  .cards {
+    padding-top: 5rem;
+    display: grid;
+    width: 60rem;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: start;
+
+    .grid-item {
+      overflow: hidden;
+      cursor: pointer;
+
+      .card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .card-icon {
+          height: 100px;
+          width: 100px;
+
+
+          &.card-1 {
+            background-image: url("../Imgs/1.png");
+          }
+
+          &.card-2 {
+            background-image: url("../Imgs/2.png");
+
+          }
+
+          &.card-3 {
+            background-image: url("../Imgs/3.png");
+
+          }
+        }
+
+
+        .card-title {
+          font-size: 22px;
+          line-height: 23px;
+          text-align: center;
+          padding-top: 15px;
+        }
+
+        .card-text {
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 17px;
+          text-align: center;
+          width: 52%;
+          margin: 0 auto;
+          padding-top: 5px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 984px) {
+  .Offer {
+    .offer-text {
+      width: 72%;
+    }
+
+    .cards {
+      width: 40rem;
+
+      .grid-item {
+
+        .card {
+
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+  .Offer {
+    h1 {
+      font-size: 34px;
+
+      &:after {
+        width: 380px;
+      }
+    }
+
+    .cards {
+      grid-template-columns: repeat(2, 1fr);
+      width: 28rem;
+      .grid-item {
+
+        .card {
+          margin-top: 45px;
+        }
+      }
+    }
+  }
+
+}
+
+
+@media (max-width: 500px) {
+  .Offer {
+    h1 {
+      font-size: 28px;
+
+      &:after {
+        width: 280px;
+      }
+    }
+
+    .cards {
+      padding-top: 2rem;
+
+      grid-template-columns: repeat(1, 1fr);
+      width: 20rem;
+
+      .grid-item {
+
+        .card {
+          margin-top: 35px;
+        }
+      }
+    }
+  }
+}
+

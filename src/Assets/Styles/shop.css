@@ -1,11 +1,16 @@
-.Offer {
+.Shop {
+  font-family: "Inconsolata", monospace;
   display: flex;
+  background-image: url("../Imgs/h1-bacground-img-1 2.png");
   justify-content: center;
   align-items: center;
   flex-direction: column;
   padding: 4rem 0 4rem 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
 }
-.Offer h1 {
+.Shop h1 {
   font-weight: 500;
   font-size: 40px;
   line-height: 42px;
@@ -13,14 +18,14 @@
   position: relative;
   overflow: hidden;
 }
-.Offer h1:after {
+.Shop h1:after {
   display: block;
   width: 515px;
   content: "";
   border-bottom: 1px solid rgba(150, 75, 0, 0.7);
   margin-top: 20px;
 }
-.Offer .offer-text {
+.Shop .shop-text {
   padding-top: 40px;
   font-weight: 300;
   font-size: 20px;
@@ -29,46 +34,38 @@
   width: 45%;
   margin: 0 auto;
 }
-.Offer .cards {
+.Shop .cards {
   padding-top: 5rem;
   display: grid;
-  width: 60rem;
-  grid-template-columns: repeat(3, 1fr);
+  width: 62rem;
+  grid-template-columns: repeat(4, 1fr);
   align-items: start;
 }
-.Offer .cards .grid-item {
+.Shop .cards .grid-item {
   overflow: hidden;
   cursor: pointer;
 }
-.Offer .cards .grid-item .card {
+.Shop .cards .grid-item .card {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.Offer .cards .grid-item .card .card-icon {
-  height: 100px;
-  width: 100px;
+.Shop .cards .grid-item .card .card-icon {
+  height: 200px;
+  width: 200px;
+  background-image: url("../Imgs/product-img-1 5.png");
 }
-.Offer .cards .grid-item .card .card-icon.card-1 {
-  background-image: url("../Imgs/1.png");
-}
-.Offer .cards .grid-item .card .card-icon.card-2 {
-  background-image: url("../Imgs/2.png");
-}
-.Offer .cards .grid-item .card .card-icon.card-3 {
-  background-image: url("../Imgs/3.png");
-}
-.Offer .cards .grid-item .card .card-title {
+.Shop .cards .grid-item .card .card-title {
   font-size: 22px;
   line-height: 23px;
   text-align: center;
   padding-top: 15px;
 }
-.Offer .cards .grid-item .card .card-text {
+.Shop .cards .grid-item .card .card-text {
   font-weight: 300;
-  font-size: 16px;
-  line-height: 17px;
+  font-size: 20px;
+  line-height: 21px;
   text-align: center;
   width: 52%;
   margin: 0 auto;
@@ -76,41 +73,41 @@
 }
 
 @media (max-width: 984px) {
-  .Offer .offer-text {
+  .Shop .shop-text {
     width: 72%;
   }
-  .Offer .cards {
+  .Shop .cards {
     width: 40rem;
   }
 }
 @media (max-width: 768px) {
-  .Offer h1 {
+  .Shop h1 {
     font-size: 34px;
   }
-  .Offer h1:after {
+  .Shop h1:after {
     width: 380px;
   }
-  .Offer .cards {
+  .Shop .cards {
     grid-template-columns: repeat(2, 1fr);
-    width: 33rem;
+    width: 28rem;
   }
-  .Offer .cards .grid-item .card {
+  .Shop .cards .grid-item .card {
     margin-top: 45px;
   }
 }
 @media (max-width: 500px) {
-  .Offer h1 {
+  .Shop h1 {
     font-size: 28px;
   }
-  .Offer h1:after {
+  .Shop h1:after {
     width: 280px;
   }
-  .Offer .cards {
+  .Shop .cards {
     padding-top: 2rem;
     grid-template-columns: repeat(1, 1fr);
     width: 20rem;
   }
-  .Offer .cards .grid-item .card {
+  .Shop .cards .grid-item .card {
     margin-top: 35px;
   }
 }

@@ -1,0 +1,150 @@
+.Shop {
+  font-family: 'Inconsolata', monospace;
+  display: flex;
+  background-image: url("../Imgs/h1-bacground-img-1 2.png");
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 4rem 0 4rem 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+
+  h1 {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 42px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+
+    &:after {
+      display: block;
+      width: 515px;
+      content: '';
+      border-bottom: 1px solid rgba(150, 75, 0, 0.7);
+      margin-top: 20px;
+    }
+  }
+
+
+  .shop-text {
+    padding-top: 40px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 21px;
+    text-align: center;
+    width: 45%;
+    margin: 0 auto;
+  }
+
+  .cards {
+    padding-top: 5rem;
+    display: grid;
+    width: 62rem;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: start;
+
+    .grid-item {
+      overflow: hidden;
+      cursor: pointer;
+
+      .card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .card-icon {
+          height: 200px;
+          width: 200px;
+          background-image: url("../Imgs/product-img-1 5.png");
+        }
+
+
+        .card-title {
+          font-size: 22px;
+          line-height: 23px;
+          text-align: center;
+          padding-top: 15px;
+        }
+
+        .card-text {
+          font-weight: 300;
+          font-size: 20px;
+          line-height: 21px;
+          text-align: center;
+          width: 52%;
+          margin: 0 auto;
+          padding-top: 5px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 984px) {
+  .Shop {
+    .shop-text {
+      width: 72%;
+    }
+
+    .cards {
+      width: 40rem;
+
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+  .Shop {
+    h1 {
+      font-size: 34px;
+
+      &:after {
+        width: 380px;
+      }
+    }
+
+    .cards {
+      grid-template-columns: repeat(2, 1fr);
+      width: 28rem;
+
+      .grid-item {
+
+        .card {
+          margin-top: 45px;
+        }
+      }
+    }
+  }
+
+}
+
+
+@media (max-width: 500px) {
+  .Shop {
+    h1 {
+      font-size: 28px;
+
+      &:after {
+        width: 280px;
+      }
+    }
+
+    .cards {
+      padding-top: 2rem;
+      grid-template-columns: repeat(1, 1fr);
+      width: 20rem;
+
+      .grid-item {
+
+        .card {
+          margin-top: 35px;
+        }
+      }
+    }
+  }
+}
+

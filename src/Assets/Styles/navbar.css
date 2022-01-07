@@ -1,3 +1,98 @@
+.nav-bg {
+  width: 95%;
+  margin: 0 auto;
+}
+.nav-bg .Navbar {
+  font-family: "Inconsolata", monospace;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  color: black;
+}
+.nav-bg .Navbar .logo {
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 52px;
+  padding: 1rem;
+}
+.nav-bg .Navbar .navbar-links ul {
+  display: flex;
+}
+.nav-bg .Navbar .navbar-links ul li {
+  font-size: 30px;
+  line-height: 31px;
+  list-style: none;
+  padding-right: 1rem;
+  cursor: pointer;
+  transition: all ease 0.5s;
+}
+.nav-bg .Navbar .hamburger {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 15px;
+  margin-top: 1rem;
+}
+.nav-bg .Navbar .hamburger .bar {
+  height: 3px;
+  width: 100%;
+  background-color: black;
+  border-radius: 16px;
+  transition: all ease 0.5s;
+}
 
+@media (max-width: 534px) {
+  .nav-bg {
+    background-color: #dac6b3;
+    width: 100%;
+  }
+  .nav-bg .Navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #dac6b3;
+    width: 95%;
+    margin: 0 auto;
+  }
+  .nav-bg .Navbar .logo {
+    font-size: 35px;
+  }
+  .nav-bg .Navbar .hamburger {
+    display: flex;
+  }
+  .nav-bg .Navbar .hamburger.menu-close span {
+    position: absolute;
+  }
+  .nav-bg .Navbar .hamburger.menu-close span:nth-child(1) {
+    transform: rotate(45deg);
+  }
+  .nav-bg .Navbar .hamburger.menu-close span:nth-child(2) {
+    transform: rotate(-45deg);
+  }
+  .nav-bg .Navbar .navbar-links {
+    display: none;
+    width: 100%;
+  }
+  .nav-bg .Navbar .navbar-links.active {
+    display: flex;
+  }
+  .nav-bg .Navbar .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+  .nav-bg .Navbar .navbar-links ul li {
+    text-align: center;
+    padding: 0.5rem 1rem;
+    transition: all ease 0.5s;
+    font-size: 25px;
+  }
+  .nav-bg .Navbar .navbar-links ul li:hover {
+    background-color: #d7b79b;
+  }
+}
 
 /*# sourceMappingURL=navbar.css.map */
